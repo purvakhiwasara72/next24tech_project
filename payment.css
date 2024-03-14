@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 400px;
+    border-radius: 8px;
+    padding: 70px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1),
+                0 5px 12px -2px rgba(0, 0, 0, 0.1),
+                0 18px 36px -6px rgba(0, 0, 0, 0.1);
+}
+
+.container .title{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container form input{
+    display: none;
+}
+
+.container form .category{
+    margin-top: 10px;
+    padding-top: 20px;
+
+   
+}
+
+.category label{
+     width: 100%; 
+     height: 55px; 
+    
+    padding: 20px;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+     justify-content: space-between; 
+    
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+
+button {
+    position: relative;
+    top: 0.1px;
+    left: 20px;
+    text-decoration: none;
+    background: #c4c4c4;
+    color: #000000;
+    margin: 50px;
+    padding: .6em 3em;
+    cursor: pointer;
+
+    }
+
+   button:hover {
+background-color:#413e66 ;
+}
+
+ label:nth-child(2), label:nth-child(3){
+    margin: 15px 0;
+} 
+
+
+#gpay:checked ~ .category .gpayMethod,
+#card:checked ~ .category .creditcardMethod,
+#bank:checked ~ .category .banktransferMethod,
+#cash:checked ~ .category .CashMethod{
+    box-shadow: 0px 0px 0px 1px #413e66;
+}
+
+
+#gpay:checked ~ .category .gpayMethod .check,
+#card:checked ~ .category .creditcardMethod .check,
+#bank:checked ~ .category .banktransferMethod .check,
+#cash:checked ~ .category .CashMethod .check{
+    display: block;
+}
+
+
+label .imgName{
+    display: flex;
+     justify-content: space-between;
+     
+    
+    align-items: center;
+}
+
+.imgName span{
+     margin-left: 20px; 
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+
+.imgName .imgContainer{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+img{
+    width: 50px;
+    height: auto;
+}
+
+.gpay img{
+    width: 60px;
+    margin-left: 5px; 
+}
+
+.card img{
+    width: 30px;
+}
+
+.bank img{
+    width: 50px;
+}
+
+.cash img{
+    width: 50px;
+}
+
+.check{
+    display: none;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+}
+
+.check i{
+    font-size: 18px;
+}

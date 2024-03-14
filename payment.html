@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Method</title>
+    <link rel="stylesheet" href="payment.css" >
+    
+    
+</head>
+<body>
+
+<div class="container">
+    <div class="title">
+        <h4>Select a <span style="color: #413e66">Payment</span> method</h4>
+    </div>
+
+    <form action="#">
+        <input type="radio" name="payment" id="gpay">
+        <input type="radio" name="payment" id="card">
+        <input type="radio" name="payment" id="bank">
+        <input type="radio" name="payment" id="cash">
+
+
+        <div class="category">
+            <label for="gpay" class="gpayMethod">
+                <div class="imgName">
+                    <div class="imgContainer gpay">
+                        <img src="assets/img/gpayy.jpg" alt="">
+                    </div>
+                    <span class="name">UPI</span>
+                </div>
+                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+            </label>
+
+            <label for="card" class="creditcardMethod">
+                <div class="imgName">
+                    <div class="imgContainer card">
+                        <img src="assets/img/card.png" alt="">
+                    </div>
+                    <span class="name">Credit/Debit Card </span>
+                    
+                </div>
+                <span class="check" ><i class="fa-solid fa-circle-check" style="color: #6064b6;" onclick="location.href='credit.html'"></i></span>
+            </label>
+
+            <label for="bank" class="banktransferMethod">
+                <div class="imgName">
+                    <div class="imgContainer bank">
+                        <img src="assets/img/bank.jpg" alt="">
+                    </div>
+                    <span class="name"> Net Banking</span>
+                </div>
+                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+            </label>
+
+            <label for="cash" class="CashMethod">
+                <div class="imgName">
+                    <div class="imgContainer cash">
+                        <img src="assets/img/cash1.jpg" alt="">
+                    </div>
+                    <span class="name">Cash on Delivery</span>
+                </div>
+                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+            </label>
+        </div>
+    </form>
+    <button type="button" onclick="location.href='credit.html'">Continue</button>
+    
+</div>
+</body>
+</html>
